@@ -5,14 +5,14 @@
 ## About
 
 This is a sample product landing page conforming to the HTML/CSS requirements
-of [FCC]()'s [*Build a Product Landing
+of [FCC](https://www.freecodecamp.org/)'s [*Build a Product Landing
 Page*](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
 project, which is part of the [*Responsive Web Design
 Certification*](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects)
 program.
 
 The HTML/CSS requirements are currently being tested using Pytest and Beautiful
-Soup 4, to make sure they are not broken, while designing the web page.
+Soup 4, while designing the web page.
 
 ## Running the tests
 
