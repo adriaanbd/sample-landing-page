@@ -1,0 +1,41 @@
+html {
+border: 1px dotted black;
+width: 360px;
+height: 640px;
+box-sizing: border-box;
+font-size: 16px;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+#page-wrapper {
+display: flex;
+flex-direction: column;
+}
+
+#top-container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+#header-img {
+margin: 12px;
+}
+
+#nav-bar {
+display: flex;
+justify-content: space-evenly;
+}
+
+#form {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+#submit {
+margin: 4%;
+}

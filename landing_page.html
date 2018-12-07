@@ -1,29 +1,35 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
         <title>Landing Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen"        href="first_draft.css" />
-        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" 
+              media="screen" href="index.css"/>
     </head>
     <body>
-        <header id="header">
-            <img id="header-img" src="" alt="">
-            <h1>Lorem Ipsum</h1>
+        <div id="page-wrapper">
+            <header id="header">
+                <div id="top-container">
+                    <img id="header-img"      src="https://via.placeholder.com/40.png/d3d3d3">
+                    <h1 id="main-title">A Big Title</h1>
+                </div>
             <nav id="nav-bar">
-                <ul>
-                    <li class="nav-link">One</li>
-                    <li class="nav-link">Two</li>
-                    <li class="nav-link">Three</li>
-                </ul>
+                <a class="nav-link" href="#">Demo</a> |
+                <a class="nav-link" href="#">Features</a> |
+                <a class="nav-link" href="3">Pricing</a> |
             </nav>
-        </header>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input id="email" type="email" placeholder="Please type your email" required>
-            <input id="submit" type="submit" value="Register">
-        </form>
-        <footer>
-        </footer>
+            </header>
+            <section>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <h2 id="call-to-action">Get Started!</h2>
+                <input id="email" type="email" placeholder="Please type your email" required>
+                <input id="submit" type="submit" value="Register">
+            </section>
+            <iframe id="video" width="" height=""
+            src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope;
+            picture-in-picture" allowfullscreen></iframe>
+        </div>
     </body>
 </html>
+

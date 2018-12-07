@@ -42,12 +42,15 @@ def test_form_requirements(html_soup):
     submit_input = html_soup.form.find(attrs={'type': 'submit'})
     assert submit_input['id'] == 'submit'                               # US11
     assert "https://" in html_soup.form['action']                       # US12
-    
+
+
+def test_embedded_video(html_soup):
+    assert html_soup.iframe['id'] == 'video'                            # US6
+
 
 def test_voluntary_failure():
     """Raise Error if tests are still pending.
     TODO: US5 - nav-link redirects to corresponding section
-    US6 - embedded video with id='video'
     US13 - navbar should always be on top
     US14 - at least one media query
     US15 - should utilize CSS Flexbox at least once"""
