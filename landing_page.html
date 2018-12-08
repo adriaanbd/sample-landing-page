@@ -3,33 +3,39 @@
     <head>
         <meta charset="utf-8" />
         <title>Landing Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" 
               media="screen" href="index.css"/>
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     </head>
     <body>
-        <div id="page-wrapper">
+        <div class="header-cont">
             <header id="header">
-                <div id="top-container">
-                    <img id="header-img"      src="https://via.placeholder.com/40.png/d3d3d3">
-                    <h1 id="main-title">A Big Title</h1>
-                </div>
-            <nav id="nav-bar">
-                <a class="nav-link" href="#">Demo</a> |
-                <a class="nav-link" href="#">Features</a> |
-                <a class="nav-link" href="3">Pricing</a> |
-            </nav>
+                <span class="lnr lnr-rocket"></span>
+                <h1 id="company">Moon</h1>
+                <nav id="nav-bar">
+                    <a class="nav-link" href="#demo">Demo</a> | 
+                    <a class="nav-link" href="#">Features</a> | 
+                    <a class="nav-link" href="#">Pricing</a>
+                </nav>
             </header>
-            <section>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <h2 id="call-to-action">Get Started!</h2>
-                <input id="email" type="email" placeholder="Please type your email" required>
-                <input id="submit" type="submit" value="Register">
-            </section>
+        </div>
+        </header>
+        <section id="demo">
             <iframe id="video" width="" height=""
             src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope;
             picture-in-picture" allowfullscreen></iframe>
-        </div>
+            <div id="block-cont"><p>Where The Catch Phrase Happens</p></div>
+        </section> 
+        <section id="call-to-action">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input class="action" id="email" type="email" 
+                       placeholder="Please type your email" required>
+                <input class="action" id="submit" type="submit" value="GET STARTED">
+            </form>
+            <div id="sign-in">Already using Demo? <a href="">Sign In</a></div>
+        </section>
     </body>
 </html>
 
