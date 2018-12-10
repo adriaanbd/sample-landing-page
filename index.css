@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 html {
     box-sizing: border-box;
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 *, *:before, *:after {
@@ -21,49 +23,83 @@ body {
     position: fixed;
     top: 0;
     flex-shrink: 1;
+    
 } 
 
 #header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 70px;
     width: 360px;
     margin: 0px auto;
-    background-color: white;
+    background-color: #ffe01b;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
 
+#header:hover{
+    background-color: white;
 }
 
 .lnr-rocket {
+    font-size: 32px;
+    margin: 16px 0px 16px 4px;
+    align-self: center;
+}
+
+.lnr-rocket:hover {
     font-size: 40px;
-    padding: 8px;
 }
 
 #company {
     align-self: center;
+    margin-bottom: 16px;
 }
+
+#company:hover {
+    background-color: black;
+    color: white;
+} 
 
 #nav-bar {
     display: flex;
-    align-items: flex-end;
-    margin: 2%;
     align-self: center;
+    margin-top: 16px;
 }
 
-#nav-link {
-    padding: 16px 16px;
-    margin: 2%;
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 8px 0px 8px 0px;
+}
+
+#main-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe01b;
+    padding: 16px;
+}
+
+#main-wrapper:hover {
+    background-color: white;
 }
 
 #demo {
     display: flex;
     flex-direction: column;
-    margin: 110px auto 20px;
-    min-width: 360px;
+    margin: 110px 0px 20px;
+    outline-style: solid;
 }
 
 #block-cont {
     font-size: 1.2em; 
     align-self: center;
+    padding: 0 0 0 34px;
 }
 
 #form {
@@ -78,14 +114,70 @@ body {
     min-height: 70px;
     border-radius: 4px;
     align-items: flex-start;
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #sign-in {
     align-self: center;
 }
 
+#email {
+    font-size: 18px;
+    border: none;
+    outline-style: solid;
+}
+
+#email:hover {
+    font-size: 18px;
+    border: none;
+    outline-style: dashed;
+}
+
+#submit {
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+#submit:hover {
+    background-color: white;
+    color: black;
+
+    outline-style: dashed;
+}
+
+#sign-in {
+    align-self: center;
+}
 
 #video {
     width: 100%;
 }
 
+.keyword {
+    background-color: white;
+    font-weight: bold;
+}
+
+#features {
+    height: 1080px;
+    outline-style: solid;
+    padding: 10px;
+    margin: 70px 0 10px;
+}
+
+#pricing {
+    height: 720px;
+    outline-style: solid;
+    padding: 10px;
+    margin: 70px 0 10px;
+}
+
+#clients {
+    height: 380px;
+    outline-style: solid;
+    padding: 10px;
+    margin: 70px 0 10px;
+}
