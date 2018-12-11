@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vw;
-    
+
 }
 
 .header-cont {
@@ -23,8 +23,8 @@ body {
     position: fixed;
     top: 0;
     flex-shrink: 1;
-    
-} 
+
+}
 
 #header {
     display: flex;
@@ -43,7 +43,7 @@ body {
 
 .lnr-rocket {
     font-size: 32px;
-    margin: 16px 0px 16px 4px;
+    margin: 16px 0px;
     align-self: center;
 }
 
@@ -59,7 +59,7 @@ body {
 #company:hover {
     background-color: black;
     color: white;
-} 
+}
 
 #nav-bar {
     display: flex;
@@ -67,37 +67,36 @@ body {
     margin-top: 16px;
 }
 
+.nav-link {
+    font-size: 18px;
+    margin: auto 4px;
+}
+
 a {
     color: black;
 }
 
 a:hover {
-    text-decoration: none;
     background-color: black;
     color: white;
     padding: 8px 0px 8px 0px;
 }
 
 #main-wrapper {
-    display: flex;
-    flex-direction: column;
     background-color: #ffe01b;
     padding: 16px;
-}
-
-#main-wrapper:hover {
-    background-color: white;
 }
 
 #demo {
     display: flex;
     flex-direction: column;
-    margin: 110px 0px 20px;
+    margin: 110px auto 20px;
     outline-style: solid;
+    justify-content: center;
 }
 
 #block-cont {
-    font-size: 1.2em; 
+    font-size: 1.2em;
     align-self: center;
     padding: 0 0 0 34px;
 }
@@ -105,8 +104,8 @@ a:hover {
 #form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 170px;
+    justify-content: space-evenly;
+    height: 250px;
     margin: 10px 0;
 }
 
@@ -119,20 +118,9 @@ a:hover {
     font-weight: bold;
 }
 
-#sign-in {
-    align-self: center;
-}
-
 #email {
     font-size: 18px;
     border: none;
-    outline-style: solid;
-}
-
-#email:hover {
-    font-size: 18px;
-    border: none;
-    outline-style: dashed;
 }
 
 #submit {
@@ -144,9 +132,18 @@ a:hover {
 #submit:hover {
     background-color: white;
     color: black;
-
-    outline-style: dashed;
 }
+
+#sign-in {
+    align-self: center;
+}
+
+
+#email:hover {
+    font-size: 18px;
+    border: none;
+}
+
 
 #sign-in {
     align-self: center;
@@ -157,27 +154,77 @@ a:hover {
 }
 
 .keyword {
-    background-color: white;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 #features {
-    height: 1080px;
-    outline-style: solid;
-    padding: 10px;
-    margin: 70px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 48px 0;
+}
+
+.box-wrapper {
+    align-self: center;
+}
+  
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 0px;
+}
+  
+.feature-icon {
+    font-size: 56px;
+}
+  
+.box-title {
+    font-size: 1.15em;
+    font-weight: bold;
+}
+  
+.box-detail {
+    align-self: center;
+}
+  
+.section-title {
+    display: flex;
+    justify-content: center;
+}
+
+#features-title {
+    align-self: center;
 }
 
 #pricing {
-    height: 720px;
-    outline-style: solid;
     padding: 10px;
     margin: 70px 0 10px;
 }
 
-#clients {
-    height: 380px;
-    outline-style: solid;
-    padding: 10px;
-    margin: 70px 0 10px;
+#client-logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#client-logos *{
+    align-self: space-between;
+    font-size: 48px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+#social-media {
+    margin: 40px 0 0;
+}
+
+#social-media *{
+    margin: 0px 2px;
 }
