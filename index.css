@@ -11,28 +11,31 @@ html {
 }
 
 body {
-    width: 360px;
     display: flex;
     flex-direction: column;
     min-height: 100vw;
+}
 
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 .header-cont {
-    max-width: 100vw;
-    position: fixed;
+    position: relative;
     top: 0;
+    z-index: 1;
+    max-width: 100vw;
     flex-shrink: 1;
-
 }
 
 #header {
     display: flex;
     justify-content: space-around;
+    position: fixed;
     height: 70px;
-    width: 360px;
-    margin: 0px auto;
-    background-color: #ffe01b;
+    width: 100vw;
+    background-color: whitesmoke;
     border-bottom: 1px solid black;
     font-weight: bold;
 }
