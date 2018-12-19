@@ -5,7 +5,7 @@ import pytest
 
 
 @pytest.fixture(scope='module')
-def html_soup(html_file="landing_page.html"):
+def html_soup(html_file="index.html"):
     """Pass the bs4 html parsed file object to all tests."""
     with open(html_file) as html:
         soup = bs(html, 'html.parser')
