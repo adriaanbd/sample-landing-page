@@ -1,0 +1,5 @@
+#company {
+	color: black !important; 
+	/*!important necessary to override text-primary class*/
+
+}
