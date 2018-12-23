@@ -3,3 +3,13 @@
 	/*!important necessary to override text-primary class*/
 
 }
+
+#contact * {
+	margin: 0 4px;
+	color: black;
+}
+
+.btn {
+	background-color: black;
+	border: none;
+}
