@@ -1,106 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Landing Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" 
-              media="screen" href="index.css"/>
-        <link rel="stylesheet"
-        href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-        <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+              media="screen" href="bs-index.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">     
     </head>
     <body>
-        <div class="header-cont">
-            <header id="header">
-                <span class="lnr lnr-rocket"></span>
-                <h1 id="company">rocket</h1>
-                <nav id="nav-bar">
-                    <a class="nav-link" href="#demo">Demo</a> | 
-                    <a class="nav-link" href="#features">Features</a> | 
-                    <a class="nav-link" href="#pricing">Pricing</a>
-                </nav>
-            </header>
-        </div>
+        <header id="header">
+            <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <i id="header-img" class="fas fa-3x fa-rocket"></i>
+                    <span id="company" class="h1 text-primary ml-3 display-5">rocket</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#demo">Demo 
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#btm-cta">Pricing</a>
+                        </li>  
+                    </ul>
+                </div>
+            </nav>
         </header>
-        <div id="main-wrapper">
-            <div class="hero">
-                <section id="demo">
-                    <iframe id="video" height="360px" src="https://media.giphy.com/media/ALQ6OXrBDqBWw/giphy.gif"></iframe>
-                    <div id="block-cont"><p>Be what you want to become. Arrive where you want to go.</p></div>
-                </section>
-            </div>
-            <section class="call-to-action">
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <input class="action" id="email" type="email" 
-                        placeholder="Please type your email" required>
-                    <input class="action" id="submit" type="submit" value="GET STARTED">
-                </form>
-                <div id="sign-in">Already using <span
-                class="keyword">rocket</span>? <a href="#">Sign In</a></div>
+        <div id="main" class="container mt-4">
+            <section id="hero" class="mx-auto">
+                <div id="demo-wrapper" class="col card">
+                    <div class="embed-responsive embed-responsive-4by3" id="demo">
+                            <iframe class="embed-responsive-item" id="video" height="360px" src="https://media.giphy.com/media/ALQ6OXrBDqBWw/giphy.gif"></iframe>
+                    </div>
+                    <blockquote class="blockquote mt-2">
+                        <p class="mb-0 text-center lead">
+                            Be what you want to become. Arrive where you want to go.
+                        </p>
+                        <footer class="blockquote-footer text-center">
+                            Anonymous
+                        </footer>
+                    </blockquote>
+                </div>
+                <div id="main-cta" class="col">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <div class="row mt-5">
+                            <div class="form-group col-sm-9">
+                                 <input type="email" class="form-control" id="email" placeholder="Please enter email">
+                            </div>
+                            <div class="col-sm-3">
+                                <button type="submit" class="container btn btn-primary">Submit</button>
+                            </div>    
+                        </div>
+                        <div class="text-center mb-5">
+                            <small id="SignIn" class="form-text text-muted">Already using rocket?<a href="#"> Sign In</a></small>
+                        </div>
+                    </form>
+                </div>
             </section>
             <section id="features">
-                <div class="section-title">
-                    <h2 class="features-title">What you can do</h2>
+                <div id="features-title" class="h2 text-center font-weight-bold mb-4">
+                    What you can do
                 </div>
-                <div class="box-wrapper">
-                    <div class="box">
-                        <div class="feature-icon"><span class="lnr lnr-hourglass"></span></div>
-                        <div class="box-title">Supersonic Speed</div>
-                        <div class="box-detail"><p>Reach your destination in no time.</p></div>
+                <div id="features-wrapper" class="row text-center">
+                    <div id="feature" class="col-sm card">
+                        <i class="card-img-top fas fa-user-astronaut fa-3x"></i>
+                        <div class="card-body">
+                            <div class="card-title font-weight-bold">Create space campaign</div>
+                            <p class="card-text">Get the word out quickly.</p>
+                        </div>
                     </div>
-                    <div class="box">
-                        <div class="feature-icon"><span class="lnr lnr-map"></span></div>
-                        <div class="box-title">Create space campaign</div>
-                        <div class="box-detail"><p>Get the word out quickly.</p></div>
+                    <div id="feature" class="col-sm card">
+                        <i class="card-img-top fas fa-space-shuttle fa-3x"></i>
+                        <div class="card-body">
+                            <div class="card-title font-weight-bold">Supersonic Speed</div>
+                            <p>Reach your destination in no time.</p>
+                        </div>
                     </div>
-                    <div class="box">
-                        <div class="feature-icon"><span class="lnr lnr-location"></span></span></div>
-                        <div class="box-title">Automated travel</div>
-                        <div class="box-detail"><p>Make your life easier, travel with autopilot.</p></div>
+                    <div id="feature" class="col-sm card">
+                        <i class="card-img-top fas fa-satellite fa-3x"></i>
+                        <div class="card-body">
+                            <div class="card-title font-weight-bold">Automated travel</div>
+                            <p class="card-text">Make your life easier, travel with autopilot.</p>
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="clients">
-                <div class="box-title-wrapper">
-                    <div class="box-title"><h3>Some of our clients</h3></div>
+                <div id="clients-title" class="h2 text-center font-weight-bold mt-5">
+                    Some of our clients
                 </div>
-                <div id="client-logos">
-                    <i class="im im-amazon"></i>
-                    <i class="im im-linux-os"></i>
-                    <i class="im im-windows-os"></i>
-                    <i class="im im-cc-visa"></i>
+                <div id="client-logos" class="row text-center mt-4">
+                    <div id="logo" class="col-sm">
+                        <i class="fab fa-amazon fa-3x"></i>
+                    </div>
+                    <div id="logo" class="col-sm">
+                        <i class="fab fa-linux fa-3x"></i>
+                    </div>
+                    <div id="logo" class="col-sm">
+                        <i class="fab fa-redhat fa-3x"></i>
+                    </div>
+                    <div id="logo" class="col-sm">
+                        <i class="fab fa-studiovinari fa-3x"></i>
+                    </div>
+                    <div id="logo" class="col-sm">
+                        <i class="fas fa-drafting-compass fa-3x"></i>
+                    </div>
                 </div>
             </section>
-            <section id="pricing">
-                <div class="box">
-                    <div class="box-title">It's easy to get started</div>
-                    <div class="box-detail"><p>And it's free. Two things that go together.</p></div>
-                    <form action="#" method="get">
-                        <input class="action" id="submit" type="submit" value="START FOR FREE" />
+            <section id="btm-cta" class="row text-center mt-3">
+                <div class="col-sm mt-5">
+                    <span class="h3 font-weight-bold">It's easy to get started</span>
+                    <p class="font-weight-bold">And it's free. Two things that go together.</p>
+                    <form id="btm-form" action="#" method="get">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-secondary text-center">START FOR FREE</button>
+                        </div>
                     </form>
                 </div>
             </section>
-            <footer>
-                <div id="social-media">
-                    <a href="https://github.com/adriaanbd">
-                        <i class="im im-github"></i>
-                    </a>
-                    <a href="https://twitter.com/abeiertz">
-                        <i class="im im-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com/adriaanbd/">
-                        <i class="im im-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/adriaanbd">
-                        <i class="im im-facebook"></i>
-                    </a>
-                </div>
-                <div id="author">
-                    <p>Adriaan Beiertz</p>
-                </div>
-            </footer>
         </div>
+        <footer id="footer" class="card-footer mt-5">
+            <div id="contact" class="container text-center text-block mt-3">
+                <a href="https://www.github.com/adriaanbd">
+                    <i id="social" class="fa fa-github fa-2x"></i>
+                </a>
+                <a href="https://codepen.io/adriaanbd/#">
+                    <i id="social" class="fab fa-codepen fa-2x"></i>
+                </a>
+                <a href="https://www.hackerrank.com/adriaanbd?hr_r=1">
+                    <i class="fab fa-hackerrank fa-2x"></i>
+                </a>
+                <a href="https://www.freecodecamp.org/adriaanbd">
+                    <i class="fab fa-free-code-camp fa-2x"></i>
+                </a>
+                <a href="https://twitter.com/abeiertz">
+                    <i id="social" class="fab fa-twitter-square fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/adriaan-beiertz-a307a2158/">
+                    <i id="social" class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com/adriaanbd">
+                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/adriaanbd/">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="mailto:adriaanbd@gmail.com">
+                    <i id="social" class="fas fa-envelope-square fa-2x"></i>
+                </a>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/f79b873af3.js"></script>
     </body>
 </html>
-

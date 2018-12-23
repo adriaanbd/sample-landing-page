@@ -1,309 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-html {
-    box-sizing: border-box;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vw;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-.header-cont {
-    position: relative;
-    top: 0;
-    z-index: 1;
-    max-width: 100vw;
-    flex-shrink: 1;
-}
-
-#header {
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    height: 70px;
-    width: 100vw;
-    background-color: whitesmoke;
-    border-bottom: 1px solid black;
-    font-weight: bold;
-}
-
-#header:hover{
-    background-color: white;
-}
-
-.lnr-rocket {
-    font-size: 32px;
-    margin: 16px 0px;
-    align-self: center;
-}
-
-.lnr-rocket:hover {
-    font-size: 40px;
+	font-family: "Oswald" !important;
 }
 
 #company {
-    align-self: center;
-    margin-bottom: 16px;
+	color: black !important;  
 }
 
-#company:hover {
-    background-color: black;
-    color: white;
+#contact * {
+	margin: 0 4px;
+	color: black;
 }
 
-#nav-bar {
-    display: flex;
-    align-self: center;
-    margin-top: 16px;
+.btn {
+	background-color: black !important;
+	border: none !important;
 }
 
-.nav-link {
-    font-size: 18px;
-    margin: auto 4px;
+.btn:hover {
+	background-color: whitesmoke !important;
+	color: black !important;
+	border-radius: 5px !important;
+	border: 1px solid black !important;
 }
 
-a {
-    color: black;
+body {
+	background-color: #ffe01b !important;
 }
 
-a:hover {
-    background-color: black;
-    color: white;
-    padding: 8px 0px 8px 0px;
+.card {
+	background-color: #fce86b !important;
 }
 
-#main-wrapper {
-    background-color: #ffe01b;
-    padding: 16px;
+#hero {
+  max-width: 615px;
 }
 
-#demo {
-    display: flex;
-    flex-direction: column;
-    margin: 110px auto 20px;
-    outline-style: solid;
-    justify-content: center;
+#demo-wrapper {
+	padding: 24px;
 }
 
-#block-cont {
-    font-size: 1.2em;
-    align-self: center;
-    padding: 0 0 0 34px;
+#feature {
+	padding-top: 24px;
 }
 
-#form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 250px;
-    margin: 10px 0;
+@media (max-width: 575px) {
+	#feature {
+		margin-top: 32px;
+	}
+	#logo {
+		margin-top: 32px;
+	}
 }
 
-.call-to-action {
-    display: flex;
-    flex-direction: column;
+#footer {
+	background-color: whitesmoke;
 }
-
-.action {
-    min-height: 70px;
-    border-radius: 4px;
-    align-items: flex-start;
-    font-family: 'Oswald';
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#email {
-    font-size: 18px;
-    border: none;
-}
-
-#submit {
-    border: none;
-    background-color: black;
-    color: white;
-}
-
-#submit:hover {
-    background-color: white;
-    color: black;
-}
-
-#sign-in {
-    align-self: center;
-}
-
-
-#email:hover {
-    font-size: 18px;
-    border: none;
-}
-
-
-#sign-in {
-    align-self: center;
-}
-
-#video {
-    width: 100%;
-}
-
-.keyword {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-#features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 48px 0;
-}
-
-.box-wrapper {
-    align-self: center;
-}
-  
-.box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 48px 0px;
-}
-  
-.feature-icon {
-    font-size: 56px;
-}
-
-.box-title-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.box-title {
-    font-size: 1.15em;
-    font-weight: bold;
-}
-  
-.box-detail {
-    align-self: center;
-}
-  
-.section-title {
-    display: flex;
-    justify-content: center;
-}
-
-#features-title {
-    align-self: center;
-}
-
-#pricing {
-    padding: 10px;
-    margin: 70px 0 10px;
-}
-
-#client-logos {
-    display: flex;
-    justify-content: space-around;
-}
-
-#client-logos *{
-    align-self: space-between;
-    font-size: 48px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 1px solid black;
-}
-
-#social-media {
-    margin: 40px 0 0;
-}
-
-#social-media *{
-    margin: 0px 2px;
-}
-
-@media (min-width:688px) {
-
-    #demo {
-      float: left;
-      width: 50%;
-      margin-right: 16px;
-    }
-
-    #video {
-        padding: 0px;
-    }
-    
-    .call-to-action {
-        margin: 234px 0px 0px;
-    }
-    
-    #features {
-      margin: 70px 0;
-    }
-    
-    .box-wrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-    }
-    
-    .box {
-      margin: 16px 0px;
-      flex-basis: 100%;
-      flex-shrink: 1;
-    }
-
-    .box-title-wrapper {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        min-width: 25%;
-    }
-
-    #box-title {
-        width: 50%;
-        align-self: center;
-    }
-
-    #clients {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    #client-logos {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-grow: 1;
-        margin: 16px 0;
-    }
-
-    #video {
-      flex-grow: 1;
-    }
-  }
